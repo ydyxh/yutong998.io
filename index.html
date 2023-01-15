@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yutong's Website</title>
+</head>
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+
+<body>
+  <div id = "header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+
+ <!-- below form 100 days python -->
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'm Yutong Yang.</h1>
+    <h2>Master Student at <span class="SDE">Dalhousie University</span></h2>
+    <h2>Master of Digital Innovation, with <span>Data Science</span> Certificate</h2>
+    <img class="buttom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+<!-- above form 100 days python -->
+
+<!-- about -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <!-- optional img 
+      <div class="about_col-1">
+        <img class="pic" src="images/woman.png" alt="woman-img">
+      </div>
+      -->
+      <div class="about_col-2">
+        <h1>About Me</h1>
+        <p>I'm a first-year master student at Dalhosuie University.I'm in the Master of Digital Innovation(MDI) program 
+          with the specialtion in Data Science.</p>
+
+          <div class="tab-titles">
+            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class = "tab-links" onclick="opentab('education')">Education</p>
+            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div>
+            <div class="tab-contents active-tab" id='skills'>
+              <ul>
+                <li><span>Python</span> <br> Programming language</li>
+                <li><span>R</span> <br>Programming language for Data Science</li>
+                <li><span>HTML,CSS,JS</span><br> For web development</li>
+                <li><span>NumPy, Matplotlib, Pandas, Seaborn, TensorFlow</span><br> Python packages</li>
+                <li><span>French (B1), English (Fluent), Chinese (Native)</span><br> Languages</li>
+
+              </ul>
+            </div>
+            <div class="tab-contents" id = 'education'>
+              <ul>
+                <li><span>Dalhousie University</span> <br>Expected 12/2023<br>Master of Digital Innovation
+                  <br>Specialization: Data Science Certificate</li>
+                <li><span>University of Illinois at Urbana-Champaign</span><br>05/2022 <br> B.S. Econometrics & Quant. Econ</li>
+              
+            
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Teaching Assistant for Economic Statistics , University of Illinois</span> <br>08/2021-12/2021                                                 
+                <br>1.Held office hours to answer student questions about lecture content and homework questions, received positive student feedback.
+                <br>2.Organized and lead three exam review sessions for students to go over practice exams, improved average exam score by 10%.
+                <br>3.Collaborated with the course instructor and other teaching assistants to moderate and encourage in-class discussions.</li>
+                <li><span>Part-time Analyst , China Securities Co., Ltd. </span> <br>03/2020-08/2020
+                  <br>1.Collected and processed prices data related to China’s real estate market using MySQL under supervision of data scientists.
+                <br>2.Imported the collected data into R to perform preliminary data clean-up, analysis, and visualization.
+                <br>3.Created detailed visualization of numeric and categorical data using SAP analytics cloud and generated weekly analysis reports.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- services-->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Course Projects</h1>
+    <div class="services-list">
+      <div>
+        <h2>Zillow housing price extractor</h2>
+        <p>Automatically extracted housing prices of selected cities from Zillow using Python requests, cleaned up the data using Pandas.
+          <br>Converted house addresses into latitude and longitude using OpenStreetMap and overlaid the extracted prices on city maps  
+        </p>
+      </div>
+      <div>
+        <h2>Stroke risk prediction using machine learning </h2>
+        <p>Selected 12 variables using principal component analysis, used Seaborn to generate high-quality illustrative figures.
+          <br>Constructed 3 machine learning models, including logistic regression, random forest and voting classifier to predict stroke risk. 
+          <br>Performed hyper-parameter optimization using grid search to further improve model accuracy, best weighted f1 score of >0.9
+        </p>
+      </div>
+      <div>
+        <h2>Snake game in Python</h2>
+        <p>Implemented the classic snake game in Python using OOP knowledge and the Turtle package for graphics.
+          <br>Added features like scoreboard, keystroke detection and screen event listener to enhance user experience of the game.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>Email : yt334536@dal.ca</p>
+        <p>Phone : +1 902-478-4588</p>
+        <button class="btn btn2"><a href="images/Yutong_CV.pdf" download >Download My Resume</a></button>
+      </div>
+
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class = "btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© Created by Yutong Yang</div>
+</div>
+
+
+      
+
+<script>
+  var tablinks = document.getElementsByClassName('tab-links');
+  var tabcontents = document.getElementsByClassName('tab-contents');
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");  
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");  
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyn2ygZN5lsI_bR32cIm0kC1SgwFsSFMve__kpZD4A8R5CCTCs3G1ejthxM2pBlBQOg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
